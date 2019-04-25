@@ -1,3 +1,8 @@
+This application incorporates two basic programs, a jms console and a jms coordinator. They work together in order to give the user the
+option to execute multiple jobs in the same time. That is happening with the help of fork/exec that create multiple processes,
+named pipes that help the communication between them, low level I/O and system signals. Finally a bash script is also used to
+collect data from the finished jobs and create statistic results from them.
+
 AM 1115201400215 - Thanasis Filippidis
 sdi1400215
 sdi1400215@di.uoa.gr
